@@ -265,5 +265,25 @@
           </div>
         </div>
       </div>
-
+      <div class="container">
+      	<center><h1>Post Pighlights</h1></center>
+      	<br>
+		<br>
+		<br>
+            <div class="row" >
+            @foreach ($posts as $post)
+              <div class="col-md-4 col-lg-6" >
+              	<div class="card p-3">
+                    <h1 class="card-title">{{$post->title}}</h1>
+                    <p class="card-text" style="width:300px; height:100px;box-sizing:border-box; overflow:hidden">{{$post->description}}</p>
+                    <a href="{{ route('post.single', ['id' => $post->id]) }}" class= "btn btn-info">Read More</a>
+               </div>
+               </div>
+               @endforeach
+            </div>
+      <br>
+     </div>
+		<br>
+		<br>
+		<br>
 @endsection

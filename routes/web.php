@@ -23,3 +23,19 @@ Route::get('/contact', 'Websitecontroller@contact');
 
 Route::get('/about', 'Websitecontroller@about');
 
+Route::get('/admin', 'Websitecontroller@admin');
+
+Route::post('/admin/add/post', 'PostController@store')->name('admin.post.store');
+
+Route::post('/admin/delete/post', 'PostController@delete')->name('admin.post.delete');
+
+
+Route::get('/post/{id}', 'PostController@single')->name('post.single');
+
+Route::get('/edit/{id}', 'PostController@edit');
+
+Route::post('/update/{id}', 'PostController@update')->name('admin.post.update');
+
+
+
+

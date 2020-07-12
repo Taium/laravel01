@@ -71,6 +71,7 @@
                   <li><a href="{{URL::asset('/area')}}" class="nav-link">Testimonials</a></li>
                   <li><a href="{{URL::asset('/about')}}" class="nav-link">About</a></li>
                   <li><a href="{{URL::asset('/contact')}}" class="nav-link">Contact</a></li>
+                  <li><a href="{{URL::asset('/admin')}}" class="nav-link">Admin</a></li>
                 </ul>
               </nav>
             </div>
